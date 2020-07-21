@@ -1,0 +1,11 @@
+name: CI
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cancel Previous Runs
+        uses: kbakk/cancel-workflow-action@010d00d00d0d0d0d00
+        with:
+          access_token: ${{ github.token }}
+      - run: sleep 60
