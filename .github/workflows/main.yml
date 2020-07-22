@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Cancel Previous Runs
-        uses: kbakk/cancel-workflow-action@010d00d00d0d0d0d00
+        uses: tomef96/cancel-workflow-action@073140824b39bf1645b8cd086a422a268f08c206
         with:
           access_token: ${{ github.token }}
       - run: sleep 60
